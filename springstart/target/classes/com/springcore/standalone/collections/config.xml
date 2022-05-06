@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xmlns:util="http://www.springframework.org/schema/util" 
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd
+ http://www.springframework.org/schema/util
+ http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<util:list list-class="java.util.LinkedList" id="subject">
+	<value>Maths</value>
+	<value>Physics</value>
+	<value>Chemistry</value>
+	<value>Biology</value>
+	</util:list>
+	
+	<util:map map-class="java.util.HashMap" id="fees">
+	<entry key="Maths" value="15000" />
+	<entry key="Physics" value="13000" />
+	<entry key="Chemistry" value="12500" />
+	<entry key="Biology" value="15000" />
+	</util:map>
+	
+	<util:properties id="teacher">
+	<prop key="Maths">Pooran Sir</prop>
+	<prop key="Physics">HP Sir</prop> 
+	<prop key="Chemistry">Archana Mam</prop>
+	<prop key="Biology">Arun Sir</prop>
+	</util:properties>
+	
+	<!-- First Bean -->
+	<bean class="com.springcore.standalone.collections.Tuition" name="tuition1">
+		<property name="Subjects" ref="subject" />
+		<property name="Fees" ref="fees" />
+		<property name="property" ref="teacher" />
+	</bean>
+	
+</beans>

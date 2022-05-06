@@ -1,0 +1,7 @@
+INDEX VERSION 1.131
+C:\Users\naman sharma\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\827926806.index
+\Springmvc\src\main\java
+C:\Users\naman sharma\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\893552416.index
+\SpringMVC\src\main\resources
+C:\Users\naman sharma\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1612938238.index
+\Springmvc\src\main\resources

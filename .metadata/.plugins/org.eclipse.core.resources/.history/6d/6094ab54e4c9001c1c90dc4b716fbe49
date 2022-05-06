@@ -1,0 +1,25 @@
+package com.springorm.dao;
+
+import javax.transaction.Transactional;
+
+import org.springframework.orm.hibernate5.HibernateTemplate;
+
+import com.springorm.entities.Person;
+
+public class PersonDao {
+	
+	
+	private HibernateTemplate hibernateTemplate;
+	@Transactional
+	public String insert(Person person) {
+		String i=(String) this.hibernateTemplate.save(person);
+		return i;
+	}
+	public HibernateTemplate getHibernateTemplate() {
+		return hibernateTemplate;
+	}
+	public void setHibernateTemplate(HibernateTemplate hibernateTemplate) {
+		this.hibernateTemplate = hibernateTemplate;
+	}
+	
+}
